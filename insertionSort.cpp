@@ -16,7 +16,7 @@ void insertionSort(int arr[], int n){
             arr[pre + 1] = arr[pre];
             pre --;
         }
-        arr[pre + 1] = curr;
+        arr[pre + 1] = curr; // placing the current element in it's current position
    }
 
 }
