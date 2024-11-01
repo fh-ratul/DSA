@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-bool isPossible(vector<int>arr, int n, int m, int maxTimeToPaint){
+bool isPossible(vector<int> &arr, int n, int m, int maxTimeToPaint){
     int painters = 1, time =0;
     for(int i = 0; i < n; i++){
         if (time + arr[i] <= maxTimeToPaint){
@@ -17,7 +17,7 @@ bool isPossible(vector<int>arr, int n, int m, int maxTimeToPaint){
     return painters <= m ? true : false ;
 }
 
-int mainTimeToPaint(vector<int>arr, int n, int m){
+int mainTimeToPaint(vector<int> &arr, int n, int m){
     int sum = 0, maxVal = INT32_MIN;
     for(int i = 0; i < n; i++){
         sum+= arr[i];
